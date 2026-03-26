@@ -46,12 +46,34 @@ Step 7: Save Your Work
 •	Save the Circuit: Click "Save" to keep your circuit design and code for future use.
 
 ## Code:
-
+```
+int ledPin=13; 
+int inPin=7; 
+void setup() 
+{ 
+ Serial.begin(9600); 
+  pinMode(ledPin,OUTPUT); 
+  pinMode(inPin,INPUT); 
+} 
+void loop() 
+{ 
+  int val=digitalRead(inPin); 
+  if(val==0) 
+  { 
+    digitalWrite(ledPin,HIGH); 
+  } 
+  else 
+  { 
+    digitalWrite(ledPin,LOW); 
+  } 
+} 
+```
 
 
 ## Output:
 
- 
+<img width="1919" height="871" alt="image" src="https://github.com/user-attachments/assets/e8139f68-dc65-43f6-bdbf-9c1c24b42915" />
+
 
 
 ## Result:
